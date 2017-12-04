@@ -8,7 +8,7 @@ import tensorflow as tf
 import numpy as np
 import random
 import datetime
-from utils import*
+#from utils import*
 import os 
 
 batch_size=32
@@ -146,7 +146,7 @@ def main(x):
 		return unit
 
 x 		=	tf.placeholder(tf.float32, [batch_size, 28,28,1], name='input')
-labels  =	tf.placeholder(tf.float32, [batch_size, 10], name='labels')
+labels  	=	tf.placeholder(tf.float32, [batch_size, 10], name='labels')
 X,Y 		= 	load_mnist()
 with tf.device('/gpu:0'):
 	outs 	=	main(x)
