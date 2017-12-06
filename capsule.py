@@ -151,7 +151,7 @@ X,Y 		= 	load_mnist()
 with tf.device('/gpu:0'):
 	outs 	=	main(x)
 	v_c 	= 	tf.sqrt(tf.reduce_sum(tf.square(outs),axis=2,keep_dims=True))
-	print v_c.get_shape().as_list(),"==================================================="
+	#print v_c.get_shape().as_list(),"==================================================="
 	zero 	=	tf.zeros(1)
 	m_plus = 0.9
 	m_minus = 0.1
