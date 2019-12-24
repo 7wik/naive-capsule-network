@@ -1,6 +1,5 @@
 """ This is a naive implementation of Mr.Hinton's capsule network. 
-I followed this https://github.com/cedrickchee/capsule-net-pytorch pytorch implementation for reference. 
-I couldn't test with reconstruction loss used in the actual network owing to it's computational complexities.
+I followed this https://github.com/cedrickchee/capsule-net-pytorch pytorch implementation for reference.
 """
 
 
